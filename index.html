@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jan Steinhauer</title>
+  
+    
 
   <!--
     - favicon
@@ -20,6 +22,7 @@
   <!--
     - google font link
   -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -191,10 +194,13 @@
         <section class="about-text">
          
           <p>
-            I am Jan Steinhauer, a Front-End Web Developer, blending expertise in React and AR technologies to create intuitive and engaging websites.
+            I am Jan Steinhauer, a Software Developer. I mainly use <strong>React</strong> to create intuitive and engaging websites.
           </p>
           <p>
-            My skills extends from UI/UX designs to robust backend solutions, ensuring a seamless digital experience. With a keen eye for detail and a passion for innovation, I translate complex requirements into user-centric applications, delivering a unique and memorable online presence for leading brands.
+              Furthermore, in my Bachelor Thesis I worked on finetuning / implmenting <strong>Large Langauge Models</strong>.
+          </p>
+          <p>
+            Besides that I was rewarded the <strong>Presidential Global Learner Award</strong> to develop a <strong>Apple Vision Pro</strong> application to promote awareness for the Monarch Butterfly.
           </p>
         </section>
 
@@ -217,10 +223,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Large Language Models</h4>
 
                 <p class="service-item-text">
-                  Modern and elegant design made at a professional level.
+                  Finetuning GPT-4 and utilizing differnt prompt strategies.
                 </p>
               </div>
 
@@ -236,7 +242,7 @@
                 <h4 class="h4 service-item-title">Web development</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Utilizing React to create userfriendly websites.
                 </p>
               </div>
 
@@ -249,10 +255,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Vision OS / IOS Developemnt</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS.
+                  Developing Vivamonarch, an apple vision pro app that lets you interact with Monarch Butterflies. 
                 </p>
               </div>
 
@@ -268,7 +274,7 @@
                 <h4 class="h4 service-item-title">Video Production</h4>
 
                 <p class="service-item-text">
-                  I make high-quality videos about the life in Texas.
+                  For the Presidental Gloabl Learner Award I also created a Tiktok Social Media Campain. 
                 </p>
               </div>
 
@@ -345,6 +351,71 @@
          
 
         </section>
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Projects</h3>
+
+          
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/vision.png" id="extra" class="extra" alt="vision pro mascot" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vision Pro App Vivamonarch</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I am currently developing the vision pro app viva monarch. In this app users can have a 360 experience of the Monarch Butterfly habitat. Furthermore, they can engage with a 3D model of the butterfly. <a href="https://github.com/JanSteinhauer/VivaMonarch" class="special-link">here</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img id="logo" class="logo" src="./assets/images/texasgerman.jpg" alt="Copitos GmbH" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>LLM Texas German</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I work for the Texas German Dialect Project at UT Austin, where we are currently training an AI to speak Texas German. <a href="https://tgdp.vercel.app" class="special-link">here</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img class="rect" id="rect" src="./assets/images/lab.jpeg" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Senior Design Project</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    In this project my team and I developed a website to gernerate Julia files to visulize Quantum Nano Electronice. Furthermore, these files are also executable on the website.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          
+         
+
+        </section>
+
 
 
         <!--
@@ -426,10 +497,10 @@
 
               <h4 class="h4 timeline-item-title">University of Texas at Austin</h4>
 
-              <span>2023 - 2025</span>
+              <span>2023 - 2024</span>
 
               <p class="timeline-text">
-                I am studing curriently Computer Science at the University of Texas at Austin.
+                I am studing currently Computer Science at the University of Texas at Austin.
                 Currrent GPA 3.8
               </p>
 
@@ -517,6 +588,60 @@ At Coptios, as a Front-End Web Developer, I specialized in crafting dynamic webs
 
         </section>
 
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vision Pro App Vivamonarch</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                I am currently developing the vision pro app viva monarch. In this app users can have a 360 experience of the Monarch Butterfly habitat. Furthermore, they can engage with a 3D model of the butterfly. Also I worked with Reality Composer Pro to create a map to visulize the way a monarch butterfly has to overcome. To take a look into the project click the following link <a href="https://github.com/JanSteinhauer/VivaMonarch" class="special-link">here</a>
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">LLM Texas German</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+               
+                I work for the Texas German Dialect Project at UT Austin, where we are currently training an AI to speak Texas German. Mainly we took transcriptions from Texas German speaker to finetune with that informatin our LLM. Furthermore we developed a Website for users to test it out: <a href="https://tgdp.vercel.app" class="special-link">here</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior Design Project</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                In this project my team and I developed a website to gernerate Julia files to visulize Quantum Nano Electronice. Furthermore, these files are also executable on the website. <a href="https://senior-design-quantum-nano-electronics.vercel.app" class="special-link">here</a>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -578,6 +703,7 @@ At Coptios, as a Front-End Web Developer, I specialized in crafting dynamic webs
           </ul>
 
         </section>
+        
 
       </article>
 
@@ -836,13 +962,13 @@ At Coptios, as a Front-End Web Developer, I specialized in crafting dynamic webs
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
+        <!-- <section class="mapbox" data-mapbox>
           <figure>
             <iframe
               src="https://www.google.com/maps/d/embed?mid=1fmxhkZuuTe83GQjsz6htdPk0Rno&ehbc=2E312F"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
+        </section> -->
 
         <section class="contact-form">
 
@@ -882,6 +1008,34 @@ At Coptios, as a Front-End Web Developer, I specialized in crafting dynamic webs
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log("I came here");
+    
+        emailjs.init("koYp5n-gb_bJpzS1U");
+        console.log("test2");
+        
+        const form = document.querySelector('[data-form]');
+        if (form) {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log("test3");
+    
+                emailjs.sendForm('service_c9f7s4s', 'template_s6vqq3q', this)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('Your message has been sent successfully!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert('Failed to send the message, please try again.');
+                    });
+            });
+        } else {
+            console.log("Form not found");
+        }
+    });
+    </script>
+    
 
   <!--
     - ionicon link

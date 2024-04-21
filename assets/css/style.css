@@ -272,6 +272,10 @@ article.active {
 
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
 
+.extra{
+  border-radius: 14px;
+}
+
 .content-card {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -313,6 +317,24 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
+.rect{
+  border-radius: 0px;
+}
+
+.special-link {
+  color:  hsl(45, 100%, 72%);       /* Sets the color of the link */
+  text-decoration: none; /* Removes the underline from the link */
+  font-weight: bold;     /* Makes the text bold */
+
+  padding-bottom: 2px;   /* Adds space between the text and the underline */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.special-link:hover, .special-link:focus {
+  color: #d35400; /* Changes the color on hover/focus */
+  border-bottom-color: #d35400; /* Changes the underline color on hover/focus */
+}
+
 
 .sidebar {
   margin-bottom: 15px;
@@ -630,7 +652,7 @@ main {
 }
 
 .logo{
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 .modal-container::-webkit-scrollbar { display: none; }
