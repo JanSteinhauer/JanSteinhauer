@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Exhibition</title>
+    <link rel="shortcut icon" href="./assets/images/jan.ico" type="image/x-icon">
+    <meta name="description" content="Explore the 3D Exhibition of Quindio, Colombia, featuring immersive 3D models and stories from my journey with the University of Texas. Discover coffee farms, diverse wildlife, cultural experiences, and more.">
+    <meta name="keywords" content="3D exhibition, Quindio, Colombia, coffee farms, wildlife, University of Texas, cultural experiences, 3D models, travel, nature, salsa dancing">
+    <meta name="author" content="Jan Steinhauer">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,6 +58,7 @@
             font-size: 2em;
             margin: 20px 0;
             color: #333;
+            margin-top: 40px;
         }
 
         .poll {
@@ -61,20 +66,80 @@
         }
 
         .poll select {
-            padding: 5px;
+            padding: 10px;
             font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .poll button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .poll button:hover {
+            background-color: #45a049;
+        }
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .footer-container img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 40px;
+        }
+
+        .footer-container a {
+            text-decoration: none;
+            color: #CC5500;
+            font-size: 1.2em;
+            font-weight: bold;
         }
     </style>
+    <script>
+        function thank()  {
+            alert("Thank you for submitting your opinion")
+        }
+    </script>
 </head>
 <body>
     <h1 class="main-heading">Quindio, Colombia Exhibition</h1>
+    <div class="container">
+        <p>Welcome to the 3D Exhibition of Quindio, Colombia. This exhibition features my experiences during my visit to Colombia with the University of Texas. I saw a lot of coffee farms and beautiful nature, especially birds. Join me in exploring the highlights of this beautiful region.</p>
+    </div>
+    <div class="container">
+        <div class="sketchfab-embed-wrapper"> 
+            <iframe title="Willy Jeep" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/539dc2e2dcf147c7be6769cbc22165b1/embed?autostart=1"> </iframe> 
+        </div>
+        <div class="description">
+            <h2>22 People in One Jeep</h2>
+            <p>Yes, you read that right. During my trip, I and 21 other passengers rode in this Willy Jeep across the beautiful Colombian landscape. Willys are a common sight and symbolize the resilience and spirit of the Quindio region.</p>
+        </div>
+    </div>
     <div class="container">
         <div class="sketchfab-embed-wrapper">
             <iframe title="Espresso" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/30eaf69f9c33446ab7f8f6ac15fbd253/embed?autostart=1"> </iframe>
         </div>
         <div class="description">
-            <h2>Espresso Machine</h2>
-            <p>In contrast to other coffee farmers, he has specialized in specialty coffee and creating an experience for tourists. It was the first time I saw how coffee was harvested, processed, and tasted it. It was a really pleasant experience. At the finca, he told us that he started out working for a cocaine producer. Through work in the business, he transitioned to having his own specialty coffee farm. The question arises: is it okay to indulge in the drug business in his situation? He was very poor, and as an uneducated worker, he had no future. Engaging in the business posed violence to people, his country, and himself. How much are we willing to sacrifice to make it? People living in poverty have no future, and sometimes the choices are stark.</p>
+            <h2>Specialty Coffee Farm</h2>
+            <p>In contrast to other coffee farmers, he has specialized in specialty coffee and creating an experience for tourists. It was the first time I saw how coffee was harvested, processed, and tasted it. It was a really pleasant experience. At the finca, he told us that he started out working in the cocaine business. Through work in the business, he transitioned to having his own specialty coffee farm. The question arises: is it okay to indulge in the drug business in his situation? He was very poor, and as an uneducated worker, he had no future. Engaging in the business posed violence to people, his country, and himself. How much are we willing to sacrifice to make it? People living in poverty have no future, and sometimes the choices are stark.</p>
             <div class="poll">
                 <p>What do you think about his situation?</p>
                 <select>
@@ -83,6 +148,7 @@
                     <option value="3">He made a positive change and should be supported</option>
                     <option value="4">It's a complex issue without a clear answer</option>
                 </select>
+                <button type="submit" onclick="thank()">Submit</button>
             </div>
         </div>
     </div>
@@ -91,8 +157,8 @@
             <iframe title="Governor of Quindio Region" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/66bee96457a7485db8ca4bd8fdfc32be/embed?autostart=1"> </iframe> 
         </div>
         <div class="description">
-            <h2>Governor of Quindio</h2>
-            <p>Step into history with this statue of the Quindio region's governor, Carlos Eduardo Osorio Buriticá, embodying the spirit of leadership in Colombia’s coffee heartland.</p>
+            <h2>Migration</h2>
+            <p>This statue represents for me the migration of young adults from small villages to big cities and even northward in search of better opportunities. Despite the beauty and tranquility of these villages, the lack of high-skill jobs drives this migration.</p>
         </div>
     </div>
     <div class="container">
@@ -100,8 +166,8 @@
             <iframe title="Road Pillar" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d4f680d7019f4cc695c66b8be1596980/embed?autostart=1"> </iframe> 
         </div>
         <div class="description">
-            <h2>Ancient Road Pillar</h2>
-            <p>Explore the architectural prowess of ancient civilizations with this detailed 3D model of a road pillar, a silent witness to the past.</p>
+            <h2>Diversity Pillar</h2>
+            <p>Colombia's biodiversity is one of its greatest treasures. During my visit, I was captivated by the stunning nature and diverse wildlife, including birds and monkeys. It's a testament to Colombia being one of the most beautiful natural destinations in the world.</p>
         </div>
     </div>
     <div class="container">
@@ -109,17 +175,8 @@
             <iframe title="Frog Game" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9f39c25d71844309bb4b5d4c94b6f5d9/embed?autostart=1"> </iframe> 
         </div>
         <div class="description">
-            <h2>Traditional Frog Game</h2>
-            <p>Dive into Colombian folklore with this charming 3D model of a traditional frog game, a playful reminder of the country’s rich cultural heritage.</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="sketchfab-embed-wrapper"> 
-            <iframe title="Willy Jeep" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/539dc2e2dcf147c7be6769cbc22165b1/embed?autostart=1"> </iframe> 
-        </div>
-        <div class="description">
-            <h2>Willy Jeep</h2>
-            <p>Experience the rugged charm of rural Colombia with this 3D model of a Willy Jeep, a symbol of adventure and resilience.</p>
+            <h2>The Winner Takes It All</h2>
+            <p>During my journey, I encountered numerous new experiences, like the frog coin game. This game taught me that there is always something new to learn in life. It was an enlightening and fun experience. Five out of five stars.</p>
         </div>
     </div>
     <div class="container">
@@ -127,18 +184,24 @@
             <iframe title="Jaguar Whistle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/26985910edf543f2b8a5deda12624581/embed?autostart=1"> </iframe> 
         </div>
         <div class="description">
-            <h2>Jaguar Whistle</h2>
-            <p>Uncover the mystique of Colombian folklore with this jaguar whistle, an artifact that echoes the deep connection between the people and their environment.</p>
+            <h2>Music Connects</h2>
+            <p>Music is a universal language that connects people and cultures. Even though I often struggled to understand the colombian accent, the sound of salsa always got me on the dance floor. I encourage everyone to try salsa dancing—it’s a fantastic way to connect with others!</p>
         </div>
     </div>
     <div class="container">
         <div class="sketchfab-embed-wrapper"> 
-            <iframe title="Guillermo Cano Isaza" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/82ca6d334ee94f28a5f94628c2fa9a6f/embed?autostart=1"> </iframe> 
+            <iframe title="Guillermo Cano Isaza" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/82ca6d334ee94f28a5f94628c2fa9a6f/embed?autostart
+
+=1"> </iframe> 
         </div>
         <div class="description">
-            <h2>Guillermo Cano Isaza Memorial</h2>
-            <p>Pay homage to Guillermo Cano Isaza, a fearless journalist whose legacy of courage and integrity continues to inspire generations.</p>
+            <h2>Never Forget History</h2>
+            <p>This statue of Guillermo Cano Isaza represents the resilience and tradition of the Colombian people. Statues of famous figures are common throughout Colombia, reminding us of the country's rich history and cultural heritage.</p>
         </div>
+    </div>
+    <div class="footer-container">
+        <img src="assets/images/jan-logo.png" alt="Jan Steinhauer">
+        <a href="https://jan-steinhauer.vercel.app/" target="_blank">Visit My Website</a>
     </div>
 </body>
 </html>
