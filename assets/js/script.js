@@ -7,6 +7,7 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
+
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -139,20 +140,31 @@ for (let i = 0; i < filterBtn.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+// Add event to all nav links
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    // Get the data-page value from the clicked nav link
+    const selectedPage = this.innerHTML.toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+    // Loop through pages to activate the correct one
+    for (let j = 0; j < pages.length; j++) {
+      if (selectedPage === pages[j].dataset.page) {
+        pages[j].classList.add("active");
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
       }
     }
 
+    // Loop through all navigation links to activate the correct one
+    for (let k = 0; k < navigationLinks.length; k++) {
+      if (navigationLinks[k] === this) {
+        navigationLinks[k].classList.add("active");
+      } else {
+        navigationLinks[k].classList.remove("active");
+      }
+    }
+
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
   });
 }

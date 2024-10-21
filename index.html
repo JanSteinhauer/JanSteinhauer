@@ -102,7 +102,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (512) 589 1780</a>
+              <a href="tel:+12133522795" class="contact-link">+1 (512) 779 7958</a>
             </div>
 
           </li>
@@ -134,8 +134,12 @@
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
-          
-          
+
+            <li class="social-item">
+              <a href="https://github.com/JanSteinhauer" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
           <li class="social-item">
             <a href="https://www.youtube.com/channel/UCrPUgrBxhxO2Aro5xZY2S-A" class="social-link">
@@ -177,8 +181,13 @@
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
+          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
           </li>
 
           <li class="navbar-item">
@@ -188,6 +197,123 @@
         </ul>
 
       </nav>
+
+
+      <!--
+  - #RESEARCH
+-->
+
+<article class="research" data-page="research">
+
+  <header>
+    <h2 class="h2 article-title">Research</h2>
+  </header>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Publications</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Bachelor's Thesis: Leveraging Summarizations from LLMs for Enhancing Community Online Deliberation Tools</h4>
+
+        <span>2024</span>
+
+        <p class="timeline-text">
+          This thesis explores the application of Large Language Models (LLMs) to enhance online community deliberation through various summarization techniques. The study focuses on evaluating the effectiveness of different summarization methods on digital platforms, aiming to improve user experience and interaction in large-scale online deliberations.
+        </p>
+
+        <p class="timeline-text">
+          <strong>Supervisors:</strong> Dr. Sebastian Oberdörfer (University of Würzburg), Dr. Min Kyung Lee, and Jonathan Lynn (University of Texas at Austin).
+        </p>
+
+        <p class="timeline-text">
+          <a href="https://github.com/JanSteinhauer/Bachelor-Thesis---Leveraging-Summarizations-from-LLMs-for-enhancing-Online-Deliberation-Tools" class="special-link">View Thesis</a>
+        </p>
+
+      </li>
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Peer Review: "The Impact of Type on Children's Social-Emotional Perceptions of Virtual Reality Characters"</h4>
+
+        <span>2023</span>
+
+        <p class="timeline-text">
+          A detailed peer review of the paper investigating how different VR character types influence children’s emotional responses, focusing on character movement and design.
+        </p>
+
+        <p class="timeline-text">
+          <a href="https://github.com/JanSteinhauer/Peer-Review---The-impact-of-type-on-children-s-social--emotional-perceptions-of-virtual-realit" class="special-link">View Peer Review</a>
+        </p>
+
+      </li>
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Paper: Future-proof Mobility Technologies for People with Dementia</h4>
+
+        <span>2023</span>
+
+        <p class="timeline-text">
+          This paper explores current mobile technologies designed to assist individuals with dementia, emphasizing the need for user-friendly, accessible solutions. It specifically focuses on Smart Prompt, an innovative mobile application that provides practical tools to improve the daily lives of dementia patients.
+        </p>
+
+        <p class="timeline-text">
+          <a href="https://github.com/JanSteinhauer/Paper---Future-proof-mobility-technologies-for-people-with-dementia-by-Jan-Steinhauer" class="special-link">View Paper</a>
+        </p>
+
+      </li>
+
+    </ol>
+
+  </section>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="trophy-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Awards and Projects</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Presidential Global Learner Award - VivaMonarch</h4>
+
+        <span>2024</span>
+
+        <p class="timeline-text">
+          I was awarded the <strong>Presidential Global Learner Award</strong> for my research on Monarch Butterflies. I developed <strong>VivaMonarch</strong>, a virtual reality app designed for the Apple Vision Pro that aims to create awareness about the Monarch butterfly and its generational preservation behavior.
+        </p>
+
+        <p class="timeline-text">
+          As one of the first educational VR applications on the Apple Store, VivaMonarch pioneers a new way to learn about and connect with the natural world. The app provides an immersive experience that allows users to explore the migration and life cycle of Monarchs in an interactive and engaging way.
+        </p>
+
+        <p class="timeline-text">
+          <a href="https://github.com/JanSteinhauer/VivaMonarch" class="special-link">View Project</a>
+        </p>
+
+      </li>
+
+    </ol>
+
+  </section>
+
+</article>
 
 
 
@@ -1039,7 +1165,7 @@ During my trip to Colombia, I had the opportunity to explore and immerse myself 
     document.addEventListener('DOMContentLoaded', function () {
         console.log("I came here");
     
-        emailjs.init("koYp5n-gb_bJpzS1U");
+        emailjs.init("nUio_ho_AIcS6SM2D");
         console.log("test2");
         
         const form = document.querySelector('[data-form]');
@@ -1048,7 +1174,7 @@ During my trip to Colombia, I had the opportunity to explore and immerse myself 
                 event.preventDefault();
                 console.log("test3");
     
-                emailjs.sendForm('service_c9f7s4s', 'template_s6vqq3q', this)
+                emailjs.sendForm('service_0bkc1ng', 'template_xjh7qqq', this)
                     .then(function(response) {
                         console.log('SUCCESS!', response.status, response.text);
                         alert('Your message has been sent successfully!');
