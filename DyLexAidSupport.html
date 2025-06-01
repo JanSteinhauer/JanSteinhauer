@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DyLexAid Support</title>
+  <link rel="shortcut icon" href="./assets/images/jan.ico" type="image/x-icon">
+  <meta name="description" content="Get support for DyLexAid, a reading assistant designed to simplify text and empower people with dyslexia.">
+  <meta name="author" content="Jan Steinhauer">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .support-container {
+      width: 100%;
+      max-width: 900px;
+      background: #fff;
+      padding: 30px;
+      box-sizing: border-box;
+      margin: 40px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 1em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .fallback {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .fallback a {
+      color: #CC5500;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    function submitSupportForm(event) {
+      event.preventDefault();
+      alert("Thank you for your message! We'll get back to you soon.");
+      document.getElementById("support-form").reset();
+    }
+  </script>
+</head>
+<body>
+  <div class="support-container">
+    <h1>Contact & Support – DyLexAid</h1>
+    <p>If you have any questions, feedback, or need help using DyLexAid, feel free to contact us using the form below.</p>
+    
+    <form id="support-form" onsubmit="submitSupportForm(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="fallback">
+      Or email us directly at <a href="mailto:janst.geo@gmail.com">janst.geo@gmail.com</a>
+    </div>
+  </div>
+</body>
+</html>
