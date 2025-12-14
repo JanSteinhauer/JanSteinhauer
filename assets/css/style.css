@@ -353,6 +353,14 @@ main {
   gap: 15px;
 }
 
+.sidebar-info3 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
