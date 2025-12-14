@@ -1907,3 +1907,161 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*  #ANIMATION
+\*-----------------------------------*/
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scale-in {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slide-in-left {
+  0% { transform: translateX(-20px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+  60% { transform: translateY(-3px); }
+}
+
+/* Staggered Animation Delays */
+article.active .timeline-item,
+article.active .service-item,
+article.active .project-item,
+article.active .skills-item,
+article.active .testimonials-item {
+  animation: slide-up 0.6s ease forwards;
+  opacity: 0;
+}
+
+article.active .timeline-item:nth-child(1),
+article.active .service-item:nth-child(1),
+article.active .project-item:nth-child(1),
+article.active .skills-item:nth-child(1),
+article.active .testimonials-item:nth-child(1) { animation-delay: 0.1s; }
+
+article.active .timeline-item:nth-child(2),
+article.active .service-item:nth-child(2),
+article.active .project-item:nth-child(2),
+article.active .skills-item:nth-child(2),
+article.active .testimonials-item:nth-child(2) { animation-delay: 0.2s; }
+
+article.active .timeline-item:nth-child(3),
+article.active .service-item:nth-child(3),
+article.active .project-item:nth-child(3),
+article.active .skills-item:nth-child(3),
+article.active .testimonials-item:nth-child(3) { animation-delay: 0.3s; }
+
+article.active .timeline-item:nth-child(4),
+article.active .service-item:nth-child(4),
+article.active .project-item:nth-child(4),
+article.active .skills-item:nth-child(4),
+article.active .testimonials-item:nth-child(4) { animation-delay: 0.4s; }
+
+article.active .timeline-item:nth-child(5),
+article.active .service-item:nth-child(5),
+article.active .project-item:nth-child(5),
+article.active .skills-item:nth-child(5),
+article.active .testimonials-item:nth-child(5) { animation-delay: 0.5s; }
+
+article.active .timeline-item:nth-child(n+6),
+article.active .service-item:nth-child(n+6),
+article.active .project-item:nth-child(n+6),
+article.active .skills-item:nth-child(n+6),
+article.active .testimonials-item:nth-child(n+6) { animation-delay: 0.6s; }
+
+
+/* Hover Effects */
+
+/* Project Card Hover */
+.project-item > a {
+  transition: var(--transition-1);
+}
+
+.project-item > a:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-2);
+}
+
+.project-item > a:hover .project-title {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Service Item Hover */
+.service-item {
+  transition: var(--transition-1);
+}
+
+.service-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--shadow-3);
+  background: var(--bg-gradient-jet); 
+}
+
+/* Testimonials Hover */
+.content-card {
+    transition: var(--transition-1);
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-3);
+}
+
+
+/* Social Link Hover */
+.social-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    color: var(--orange-yellow-crayola);
+}
+
+/* Navbar Link Active/Hover Animation */
+.navbar-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--orange-yellow-crayola);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+  transform: translateX(0);
+}
+
+/* Sidebar Animation on Load */
+.sidebar {
+    animation: slide-in-left 0.8s ease backwards;
+}
+
+/* Focus Styles for Accessibility */
+:focus-visible {
+    outline: 2px solid var(--orange-yellow-crayola);
+    outline-offset: 2px;
+}

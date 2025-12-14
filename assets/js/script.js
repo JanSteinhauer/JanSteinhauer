@@ -13,7 +13,11 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+sidebarBtn.addEventListener("click", function () { 
+  elementToggleFunc(sidebar); 
+  const isExpanded = sidebar.classList.contains("active");
+  sidebarBtn.setAttribute("aria-expanded", isExpanded);
+});
 
 
 
@@ -32,6 +36,14 @@ const modalText = document.querySelector("[data-modal-text]");
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
+  
+  if (modalContainer.classList.contains("active")) {
+    modalCloseBtn.focus();
+    // Trap focus logic could be added here, but for now focus move is essential.
+  } else {
+     // Return focus to the last clicked item if possible, or just body
+     // Ideally we track what launched it.
+  }
 }
 
 // add click event to all modal items
