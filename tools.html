@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools by Jan Steinhauer</title>
+    <meta name="description" content="Tools, Apps, and Scripts by Jan Steinhauer.">
+    <link rel="shortcut icon" href="./assets/images/jan.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./assets/images/jan-logo.png" alt="Jan Steinhauer" width="80"
+                        style="border-radius: 20px;">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Jan Steinhauer">Jan Steinhauer</h1>
+                    <p class="title">Software developer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn aria-label="Show Contacts" aria-expanded="false">
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:jan.armin.steinhauer@gmail.com"
+                                class="contact-link">jan.armin.steinhauer@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+4915785871521" class="contact-link">+49 1578 5871 521</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Würzburg, Germany</address>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/jan-steinhauer-a18611206/" class="social-link"
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/JanSteinhauer" class="social-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.youtube.com/channel/UCrPUgrBxhxO2Aro5xZY2S-A" target="_blank"
+                            class="social-link" aria-label="YouTube">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/stei.jan/" class="social-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>Tools</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- TOOLS ARTICLE -->
+            <article class="tools active" data-page="tools">
+
+                <header>
+                    <h2 class="h2 article-title">Tools</h2>
+                </header>
+
+                <!-- APPS -->
+                <section class="service">
+                    <h3 class="h3 service-title">Apps</h3>
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <a href="https://github.com/JanSteinhauer/MoneyTimer" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="wallet-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Money Timer</h4>
+                                    <p class="service-item-text">App to track your spending of money</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="service-item">
+                            <a href="https://github.com/JanSteinhauer/HabiTimer" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="checkbox-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Habbit Timer</h4>
+                                    <p class="service-item-text">App to track your Habbits</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="service-item">
+                            <a href="https://github.com/JanSteinhauer/ReflectTimer" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="journal-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Reflect Timer</h4>
+                                    <p class="service-item-text">App to reflect on your day</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="service-item">
+                            <a href="https://github.com/JanSteinhauer/IronTimer" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="barbell-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Iron Timer</h4>
+                                    <p class="service-item-text">App to track your Gym workouts</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="service-item">
+                            <a href="https://github.com/JanSteinhauer/DartTimer" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="disc-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Dart Timer</h4>
+                                    <p class="service-item-text">App to track your Dart Games</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- WEBSITES -->
+                <section class="service">
+                    <h3 class="h3 service-title">Websites</h3>
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <a href="https://jansteinhauer.github.io/HEIC-to-Png/" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="images-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Heic to Png</h4>
+                                    <p class="service-item-text">Convert HEIC images to PNG</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="service-item">
+                            <a href="https://jansteinhauer.github.io/ColorPicker/" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="color-palette-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Color Picker</h4>
+                                    <p class="service-item-text">Select and identify colors</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="service-item">
+                            <a href="https://jansteinhauer.github.io/PDF-Editor/" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="document-text-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">PDF Editor</h4>
+                                    <p class="service-item-text">Edit your PDF documents</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- PYTHON SCRIPTS -->
+                <section class="service">
+                    <h3 class="h3 service-title">Python Scripts</h3>
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <a href="https://github.com/JanSteinhauer/RealEstateChecker" target="_blank">
+                                <div class="service-icon-box">
+                                    <ion-icon name="home-outline"
+                                        style="font-size: 40px; color: var(--orange-yellow-crayola); margin: 0 auto;"></ion-icon>
+                                </div>
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">Real Estate Checker</h4>
+                                    <p class="service-item-text">Automated real estate analysis</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/tools-script.js"></script>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
