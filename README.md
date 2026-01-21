@@ -1,5 +1,5 @@
 <h1 align="center">Hi there, I'm Jan Steinhauer 👋</h1>
-<h3 align="center">Software Developer Specializing in React, VisionOS, and Large Language Models</h3>
+<h3 align="center">Software Developer Specializing in VisionOS, SwiftUI and Web Dev</h3>
 
 <p align="center">
   <img src="./assets/images/jan-logo.png" alt="Jan Steinhauer" width="150" style="border-radius: 50%;">
