@@ -1323,9 +1323,9 @@
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="from_name" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="reply_to" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
@@ -1358,7 +1358,8 @@
     document.addEventListener('DOMContentLoaded', function () {
       console.log("I came here");
 
-      emailjs.init("nUio_ho_AIcS6SM2D");
+      // Replace with your new Public Key
+      emailjs.init("koYp5n-gb_bJpzS1U");
       console.log("test2");
 
       const form = document.querySelector('[data-form]');
@@ -1367,7 +1368,9 @@
           event.preventDefault();
           console.log("test3");
 
-          emailjs.sendForm('service_0bkc1ng', 'template_xjh7qqq', this)
+          // Ensure 'service_c9f7s4s' matches your actual Service ID on the dashboard
+          // updated template ID to 'template_d0jvml9'
+          emailjs.sendForm('service_c9f7s4s', 'template_d0jvml9', this)
             .then(function (response) {
               console.log('SUCCESS!', response.status, response.text);
               alert('Your message has been sent successfully!');
